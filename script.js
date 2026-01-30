@@ -72,26 +72,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form Submission Handling
     const form = document.getElementById('contactForm');
     if (form) {
+        let submitted = false;
+
+        // When the hidden iframe loads, it means the response is back
+        const iframe = document.getElementById('hidden_iframe');
+        if (iframe) {
+            iframe.onload = function () {
+                if (submitted) {
+                    const btn = form.querySelector('.submit-btn');
+                    btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
+                    btn.style.background = '#10b981'; // Green for success
+                    form.reset();
+                    alert("Thank you! Your message has been sent successfully.");
+
+                    setTimeout(() => {
+                        btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+                        btn.style.background = '';
+                        btn.style.opacity = '1';
+                        submitted = false;
+                    }, 3000);
+                }
+            };
+        }
+
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Simulate form submission
+            // Do NOT prevent default, we want the form to submit to the iframe
+            submitted = true;
             const btn = form.querySelector('.submit-btn');
-            const originalText = btn.innerHTML;
-            
             btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
             btn.style.opacity = '0.7';
-            
-            setTimeout(() => {
-                btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
-                btn.style.background = '#10b981'; // Green for success
-                form.reset();
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.style.background = '';
-                    btn.style.opacity = '1';
-                }, 3000);
-            }, 1500);
         });
     }
 });
