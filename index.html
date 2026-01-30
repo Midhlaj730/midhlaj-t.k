@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <meta name="description" content="Portfolio of a Creative Developer featuring projects and skills.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for icons, effectively using fa classes -->
+    <!-- Using a CDN for FontAwesome free icons for demonstration if kit doesn't work, strictly using classes that work generally or replacing with SVGs if needed. using standard fa classes. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">Port<span>folio</span>.</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name">Muhammed Midhlaj t.k</h1>
+                <h2 class="title">Cloud & DevOps Intern</h2>
+                <p class="bio-short"></p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn primary">Get in Touch</a>
+                    <!-- USER REQUEST: Add CV Button -->
+                    <a href="C:\Users\muhammed midhlaj\.gemini\antigravity\scratch\portfolio\muhammed midhlaj t.k  (2).pdf"
+                        class="btn secondary" download>Download CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blob"></div>
+                <!-- Placeholder for Hero Image -->
+                <div class="glass-card">
+                    <i class="fas fa-server"></i>
+                    <span>Infrastructure</span>
+                </div>
+                <div class="glass-card card-2">
+                    <i class="fas fa-rocket"></i>
+                    <span>Automation</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Placeholder: Replace with actual image -->
+                    <div class="img-placeholder"><img
+                            src="C:\Users\muhammed midhlaj\.gemini\antigravity\scratch\portfolio\WhatsApp Image 2026-01-30 at 10.32.25 AM.jpeg"
+                            height="340" width="340">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Creative Problem Solver</h3>
+                    <p>Linux and DevOps intern with hands-on experience in Linux system administration, AWS cloud
+                        services, and
+                        automation using Ansible. Skilled in deploying and managing web hosting environments using
+                        Nginx, Apache,
+                        MySQL, PHP, Docker, and Jenkins CI/CD pipelines. Experienced with AWS EC2, VPC, ALB, Auto
+                        Scaling, and
+                        monitoring tools like grafana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill Items -->
+                <div class="skill-card">
+                    <i class="fab fa-aws"></i>
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Ansible</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Jenkins</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Scripting</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Placeholder -->
+                        <div class="img-placeholder-rect"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Automation using ansible</h3>
+                        <p>Automated Linux Web Hosting Stack using Ansible in Aws</p>
+                        <div class="tags">
+                            <span>AWS</span>
+                            <span>Ansible</span>
+                            <span>linux</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="img-placeholder-rect"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CI/CD Implementation</h3>
+                        <p>Automated a full stack web application using devops concept</p>
+                        <div class="tags">
+                            <span>Jenkins</span>
+                            <span>Docker</span>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Midhlaj730/royal-clinic" class="icon-link"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="img-placeholder-react"></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-info">
+                            <h3>portfolio</h3>
+                            <p></p>
+                            <div class="tags">
+                                <span>Html</span>
+                                <span>git</span>
+                                <span>docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Midhlaj730/portfolio" class="icon-link"><i
+                                        class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>Midhlaj730@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8590662481</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Kuttippuram </h4>
+                            <p>Kerala, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn primary submit-btn">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Muhammed Midhlaj. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/midhlajtk"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Midhlaj730"><i class="fab fa-github"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
